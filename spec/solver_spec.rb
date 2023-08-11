@@ -32,7 +32,7 @@ describe Solver do
 
   describe '#fizzbuzz' do
     it 'When integer is divisible by 3, return fizz' do
-      expect(@solver.fizzbuzz(9)).to eql('Fizz')
+      expect(@solver.fizzbuzz(9)).to eql('fizz')
     end
 
     it 'When integer is divisible by 5, return buzz' do
