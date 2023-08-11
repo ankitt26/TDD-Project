@@ -29,4 +29,22 @@ describe Solver do
       expect(@solver.reverse('hello')).to eq('olleh')
     end
   end
+
+  describe '#fizzbuzz' do
+    it 'When integer is divisible by 3, return fizz' do
+      expect(@solver.fizzbuzz(9)).to eql('Fizz')
+    end
+
+    it 'When integer is divisible by 5, return buzz' do
+      expect(@solver.fizzbuzz(10)).to eql('buzz')
+    end
+
+    it 'When integer is divisible by 3 and 5 , return fizzbuzz' do
+      expect(@solver.fizzbuzz(15)).to eql('fizzbuzz')
+    end
+
+    it 'when integer is not divisible by 3 or 5 return integer as a string' do
+      expect(@solver.fizzbuzz(7)).to eql('7')
+    end
+  end
 end
