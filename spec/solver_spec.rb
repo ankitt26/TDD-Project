@@ -1,3 +1,4 @@
+require_relative '../classes/solver'
 describe Solver do
   before(:each) do
     @solver = Solver.new
