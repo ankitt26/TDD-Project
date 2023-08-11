@@ -23,4 +23,10 @@ describe Solver do
       expect { @solver.factorial(-2) }.to raise_error(RuntimeError, 'negative numbers are not allowed')
     end
   end
+
+  describe '#reverse' do
+    it 'return reversed word' do
+      expect(@solver.reverse('hello')).to eq('olleh')
+    end
+  end
 end
