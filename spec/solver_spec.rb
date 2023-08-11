@@ -20,7 +20,7 @@ describe Solver do
     end
 
     it 'raise the exception if argument is negative' do
-      expect(@solver.factorial(-2)).to eq('negative numbers are not allowed')
+      expect { @solver.factorial(-2) }.to raise_error(RuntimeError, 'negative numbers are not allowed')
     end
   end
 end
