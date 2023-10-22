@@ -3,12 +3,9 @@
 <a name="readme-top"></a>
 
 <div align="center">
-
   <br/>
-
   <h3><b>TDD-PROJECT
 </b></h3>
-
 </div>
 
 <!-- TABLE OF CONTENTS -->
